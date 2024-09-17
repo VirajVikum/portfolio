@@ -1,11 +1,13 @@
 import Photo from "@/components/Photo";
 import Social from "@/components/Social";
+import Stats from "@/components/Stats";
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
 
 const Home = () => {
   return (
-    <section className="h-full">
+    // h-full
+    <section className="min-h-screen flex flex-col justify-between">
       <div className="container mx-auto h-full">
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
 
@@ -35,9 +37,11 @@ const Home = () => {
             </div>
           </div>
           <div className="order-1 xl:order-none mb-8 xl:mb-0">
-            <Photo /></div>
+            <Photo />
+            </div>
         </div>
       </div>
+      <Stats />
     </section>
   );
 };
