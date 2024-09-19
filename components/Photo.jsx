@@ -20,7 +20,7 @@ const Photo = () => {
             transition: {delay:2.4, duration:0.4, ease:"easeInOut"},
         }}
         // [298px] h-[298px] xl:w-[498px] xl:h-[498px]
-        className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-lighten absolute"> 
+        className="w-[300px] h-[300px] xl:w-[502px] xl:h-[502px] mix-blend-lighten absolute"> 
             <Image
             src="/assets/photo-gray.png"
             priority

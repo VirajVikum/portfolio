@@ -2,23 +2,27 @@ import Photo from "@/components/Photo";
 import Social from "@/components/Social";
 import Stats from "@/components/Stats";
 import { Button } from "@/components/ui/button";
+import { Spotlight } from "@/components/ui/Spotlight";
+import { TextGenerateEffect } from "@/components/ui/TextGenerateEffect";
 import { FiDownload } from "react-icons/fi";
 
 const Home = () => {
   return (
     // h-full
     <section className="h-full">
-      <div className="container mx-auto h-full">
-        <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
+      <div className="container mx-auto">
+        <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-2 xl:pb-8">
 
+          <Spotlight className="-top-40 -left-10 " fill="green" />
           <div className="text-center xl:text-left order-2 xl:order-none">
             <span className="text-xl">Fullstack Developer</span>
             <h1 className="h1 mb-6">
               Hello I'm <br /> <span className="text-accent">Viraj Vikum</span>
             </h1>
-            <p className="max-w-[500px] mb-9 text-white/80">
-              "Passionate developer skilled in building dynamic, user-centric applications with a focus on clean code, innovative solutions, and seamless user experiences."
-            </p>
+            {/* <p className="max-w-[500px] mb-9 text-white/80"> */}
+            <TextGenerateEffect className="mb-9 text-white text-[40px] md:text-[5xl]" words='"Passionate developer skilled in building dynamic, user-centric applications with a focus on clean code, innovative solutions, and seamless user experiences."' />
+              
+            {/* </p> */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
               <Button
               variant="outline"
