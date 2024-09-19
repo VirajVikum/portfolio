@@ -3,6 +3,8 @@ import "./globals.css";
 import Header from "@/components/Header";
 import PageTransition from "@/components/PageTransition";
 import StairEffect from "@/components/StairEffect";
+import { BackgroundBeams } from "@/components/ui/background-beams";
+import { SparklesCore } from "@/components/ui/Sparkles";
 
 const JetBrainsMono = JetBrains_Mono({
   subsets: ["latin"], weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
@@ -17,13 +19,27 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      
       <body className={JetBrainsMono.variable}>
         <Header />
         <StairEffect />
-        
         <PageTransition>
           {children}
         </PageTransition>
+
+        {/* Background container */}
+      <div className="absolute inset-0 -z-10">
+          <BackgroundBeams />
+                <SparklesCore 
+          id="tsparticlesfullpage"
+          background="transparent"
+          minSize={0.6}
+          maxSize={1.4}
+          particleDensity={100}
+          className="w-full h-full"
+          particleColor="#FFFFFF" />
+          </div>
+        
       </body>
     </html>
   );
