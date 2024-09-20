@@ -34,3 +34,31 @@
     font-family: var(--font-jetbrainsMono);
   }
 }
+
+.hover\:expose-card {
+  /* Initial state */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform: translateY(0) scale(1);
+  z-index: 0;
+}
+
+.hover\:expose-card:hover {
+  /* Transform and elevate on hover */
+  transform: translateY(-10px) scale(0.9);
+  z-index: 10; /* Brings the card to the front */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Adds shadow effect */
+}
+
+.hover\:zoom-card {
+  /* Initial state */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform: translateY(0) scale(1);
+  z-index: 0;
+}
+
+.hover\:zoom-card:hover {
+  /* Transform and elevate on hover */
+  transform: translateY(-10px) scale(1.1);
+  z-index: 10; /* Brings the card to the front */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Adds shadow effect */
+}
