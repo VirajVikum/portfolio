@@ -19,39 +19,39 @@ import { PinContainer } from "@/components/ui/3d-pin";
 const projects = [
   {
     num: "01",
-    category: "frontend",
-    title: "project 1",
+    category: "Standalone",
+    title: "Student Results Analyser",
     description: "quasi quisquam dolorem accusamus, voluptas iure nihil et nisi sunt laborum laboriosam quia, perferendis qui.",
     stack: [
-      { name: 'Html 5' }, { name: 'Css 3' }, { name: 'Javascript' },
+      { name: 'V.B' }, { name: 'MS Excel' },
     ],
-    image: '/assets/work/thumb1.png',
-    live: "",
-    github: "",
+    image: '/assets/projets/grading.JPG',
+    live: "https://github.com/VirajVikum",
+    github: "https://github.com/VirajVikum",
   },
   {
     num: "02",
-    category: "fullstack",
-    title: "project 2",
+    category: "Standalone",
+    title: "PDF to Word document convertor",
     description: "quasi quisquam dolorem accusamus, voluptas iure nihil et nisi sunt laborum laboriosam quia, perferendis qui.",
     stack: [
-      { name: 'Html 5' }, { name: 'Css 3' }, { name: 'Javascript' },
+      { name: 'Python' },
     ],
-    image: '/assets/projets/Capture.JPG',
-    live: "",
-    github: "",
+    image: '/assets/projets/pdfConvertor.JPG',
+    live: "https://github.com/VirajVikum",
+    github: "https://github.com/VirajVikum",
   },
   {
     num: "03",
     category: "fullstack",
-    title: "project 2",
+    title: "Call center System",
     description: "quasi quisquam dolorem accusamus, voluptas iure nihil et nisi sunt laborum laboriosam quia, perferendis qui.",
     stack: [
       { name: 'Laravel' }, { name: 'Livewire' },
     ],
-    image: '/assets/work/thumb1.png',
-    live: "",
-    github: "",
+    image: '/assets/projets/agentdb.JPG',
+    live: "https://github.com/VirajVikum",
+    github: "https://github.com/VirajVikum",
   },
 ]
 
@@ -103,7 +103,7 @@ const Work = () => {
               <div className="flex items-center p-4 pb-0">
                 {/* live project button */}
                 <div className="pr-16">
-                {/* <PinContainer
+                  {/* <PinContainer
                   title="/ui.aceternity.com"
                   href="https://twitter.com/mannupaaji"
                 > */}
@@ -119,28 +119,28 @@ const Work = () => {
                       </Tooltip>
                     </TooltipProvider>
                   </Link>
-                {/* </PinContainer> */}
+                  {/* </PinContainer> */}
                 </div>
 
                 {/* github project button */}
                 <div className="pl-16">
-                <PinContainer
-                  title="/ui.aceternity.com"
-                  href="https://twitter.com/mannupaaji"
-                >
-                  <Link href={project.github}>
-                    <TooltipProvider delayDuration={100}>
-                      <Tooltip>
-                        <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                          <BsGithub className="text-white text-3xl group-hover:text-accent" />
-                        </TooltipTrigger>
-                        <TooltipContent>
-                          <p>github repository</p>
-                        </TooltipContent>
-                      </Tooltip>
-                    </TooltipProvider>
-                  </Link>
-                </PinContainer>
+                  <PinContainer
+                    title="Github"
+                    href={project.github}
+                  >
+                    <Link href={project.github}>
+                      <TooltipProvider delayDuration={100}>
+                        <Tooltip>
+                          <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                            <BsGithub className="text-white text-3xl group-hover:text-accent" />
+                          </TooltipTrigger>
+                          <TooltipContent>
+                            <p>github repository</p>
+                          </TooltipContent>
+                        </Tooltip>
+                      </TooltipProvider>
+                    </Link>
+                  </PinContainer>
                 </div>
               </div>
 
@@ -171,7 +171,7 @@ const Work = () => {
                         <Image
                           src={project.image}
                           fill
-                          className="object-cover "
+                          className="object-contain"
                           alt=""
                         />
 
