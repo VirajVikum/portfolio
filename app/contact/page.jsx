@@ -62,7 +62,7 @@ const Contact = () => {
 
                 <h3 className="text-4xl text-accent">Let's work together</h3>
                 <p className="text-white/60">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                Let’s collaborate to bring your ideas to life and create something exceptional together. </p>
                 {/* input */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <Input type="firstname" placeholder="Firstname" />

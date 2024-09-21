@@ -10,19 +10,19 @@ const services = [
   {
     num: "01",
     title: 'Web Development',
-    description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis neque impedit, autem quod molestiae soluta voluptas commodi sed, corrupti, exercitationem.',
+    description: 'Developed dynamic and responsive web applications using modern frameworks like Laravel, Livewire, and Next.js, ensuring seamless user experiences and high performance.',
     href: ""
   },
   {
     num: "02",
     title: 'Mobile Development',
-    description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis neque impedit, autem quod molestiae soluta voluptas commodi sed, corrupti, exercitationem.',
+    description: 'Designed and built responsive mobile applications for both iOS and Android platforms, focusing on user experience and performance.',
     href: ""
   },
   {
     num: "03",
     title: 'Software Development',
-    description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis neque impedit, autem quod molestiae soluta voluptas commodi sed, corrupti, exercitationem.',
+    description: 'Developed and deployed robust web applications utilizing modern frameworks and best practices, with a focus on delivering scalable, user-centric software solutions.',
     href: ""
   },
 ];

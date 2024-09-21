@@ -18,7 +18,7 @@ import { LinkPreview } from "@/components/ui/link-preview";
 
 const about = {
   title: 'About me',
-  description: 'riosam minus ipsam repellendus doloribus dolorum est ipsum excepturi deserunt, necessitatibus voluptas illo quam voluptatum labore neque dolorem quas.',
+  description: 'A passionate developer with expertise in software, web, and mobile development, dedicated to creating efficient and innovative solutions.',
   info: [
     {
       fieldName: "Name",
@@ -59,7 +59,7 @@ const about = {
 const experience = {
   icon: '/assets/resume/badge.svg',
   title: "My experience",
-  description: "riosam minus ipsam repellendus doloribus dolorum est ipsum excepturi deserunt, necessitatibus voluptas illo quam voluptatum labore neque dolorem quas.",
+  description: "Demonstrated expertise in full-stack development through hands-on experience in building, testing, and deploying scalable applications.",
   items: [
     {
       company: "Auso World PVT LTD.",
@@ -108,7 +108,7 @@ const experience = {
 const education = {
   icon: '/assets/resume/cap.svg',
   title: "My education",
-  description: "riosam minus ipsam repellendus doloribus dolorum est ipsum excepturi deserunt, necessitatibus voluptas illo quam voluptatum labore neque dolorem quas.",
+  description: "Completed a HND in Information Technology, focusing on software development, web technologies, and data analysis.",
   items: [
     {
       institution: "Sri Rahua National School",
