@@ -171,7 +171,7 @@ const Work = () => {
                         <Image
                           src={project.image}
                           fill
-                          className="object-contain"
+                          className="object-contain bg-black"
                           alt=""
                         />
 
