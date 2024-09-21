@@ -21,7 +21,7 @@ const projects = [
     num: "01",
     category: "Standalone",
     title: "Student Results Analyser",
-    description: "quasi quisquam dolorem accusamus, voluptas iure nihil et nisi sunt laborum laboriosam quia, perferendis qui.",
+    description: "An Excel and Visual Basic project for school students' results analysis involves creating an automated system to input, calculate, and visualize students' grades and performance metrics efficiently.",
     stack: [
       { name: 'V.B' }, { name: 'MS Excel' },
     ],
@@ -33,9 +33,9 @@ const projects = [
     num: "02",
     category: "Standalone",
     title: "PDF to Word document convertor",
-    description: "quasi quisquam dolorem accusamus, voluptas iure nihil et nisi sunt laborum laboriosam quia, perferendis qui.",
+    description: "A Python project using the Tesseract library for converting PDF files to Word documents involves extracting text from scanned PDFs and converting it into an editable Word format, streamlining document digitization and editing processes.",
     stack: [
-      { name: 'Python' },
+      { name: 'Python' },{name: 'Tesseract library'},
     ],
     image: '/assets/projets/pdfConvertor.JPG',
     live: "https://github.com/VirajVikum",
@@ -45,7 +45,7 @@ const projects = [
     num: "03",
     category: "fullstack",
     title: "Call center System",
-    description: "quasi quisquam dolorem accusamus, voluptas iure nihil et nisi sunt laborum laboriosam quia, perferendis qui.",
+    description: "A Laravel and Livewire project for AUSO World (Pvt) Ltd designed an outbound call center system that streamlines agent interactions, tracks call outcomes, and integrates real-time dashboards for monitoring campaign performance and agent productivity.",
     stack: [
       { name: 'Laravel' }, { name: 'Livewire' },
     ],
@@ -81,7 +81,7 @@ const Work = () => {
             <div className="flex flex-col gap-[30px] h-[50%]">
               {/* outline num */}
               <div className="text-8xl leading-none font-extrabold text-transparent text-outline">{project.num}</div>
-              <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">{project.category} project</h2>
+              <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">{project.title} project</h2>
               <p className="text-white/60">{project.description}</p>
               <ul className="flex gap-4">
 
