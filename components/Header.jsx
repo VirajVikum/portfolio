@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Button } from "./ui/button";
 import Nav from "./Nav";
 import MobileNav from "./MobileNav";
-import { Cover } from "./ui/cover";
+// import { Cover } from "./ui/cover";
 const Header = () => {
     return (
         <header className="py-6 xl:py-10 text-white">
@@ -11,9 +11,9 @@ const Header = () => {
                 {/* logo */}
                 <Link href="/">
                     <h1 className="text-4xl font-semibold">
-                     <Cover>
+                     {/* <Cover> */}
                         <span className="text-white">VJ</span> <span className="text-accent">Styles</span><span className="text-white">.</span>
-                        </Cover>
+                        {/* </Cover> */}
                         
                     </h1>
                 </Link>
