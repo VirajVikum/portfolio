@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 import PageTransition from "@/components/PageTransition";
 import StairEffect from "@/components/StairEffect";
 import { BackgroundBeams } from "@/components/ui/background-beams";
-import { SparklesCore } from "@/components/ui/Stars";
+import { SparklesCore } from "@/components/ui/Sparkles";
 
 const JetBrainsMono = JetBrains_Mono({
   subsets: ["latin"], weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
