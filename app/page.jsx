@@ -13,7 +13,9 @@ const Home = () => {
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-2 xl:pb-8">
 
-          <Spotlight className="-top-40 -left-10 " fill="green" />
+          {/* <Spotlight className="-top-40 -left-10 " fill="green" />
+          <Spotlight className="-top-10 -left-10 " fill="pink" />
+          <Spotlight className="-top-0 -left-10 " fill="yellow" /> */}
           <div className="text-center xl:text-left order-2 xl:order-none">
             <span className="text-xl">Fullstack Developer</span>
             <h1 className="h1 mb-6">
