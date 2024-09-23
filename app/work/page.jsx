@@ -33,7 +33,7 @@ const projects = [
     num: "02",
     category: "Standalone",
     title: "PDF to Word document convertor",
-    description: "A Python project using the Tesseract library for converting PDF files to Word documents involves extracting text from scanned PDFs and converting it into an editable Word format, streamlining document digitization and editing processes.",
+    description: "A Python project using the Tesseract library for converting image type PDF files to Word documents involves extracting text from scanned PDFs and converting it into an editable Word format, streamlining document digitization and editing processes.",
     stack: [
       { name: 'Python' },{name: 'Tesseract library'},
     ],
