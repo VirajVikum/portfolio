@@ -5,7 +5,7 @@ import { LinkPreview } from "./ui/link-preview";
 
 const socials = [
     { icon: <FaGithub />, path: "https://github.com/VirajVikum" },
-    { icon: <FaLinkedinIn />, path: "https://www.linkedin.com/in/viraj-amarasingha" },
+    { icon: <FaLinkedinIn />, path: "https://www.linkedin.com/in/viraj-amarasingha-906a1b2a4/" },
     { icon: <FaYoutube />, path: "" },
     { icon: <FaTwitter />, path: "" },
 ];

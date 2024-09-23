@@ -112,15 +112,20 @@ const Contact = () => {
                     <p className="text-white/60">{item.title}</p>
                     {item.title === "Linkedin" ? (
                       // <a href="/as"><h3 className="text-xl">{item.description}</h3></a>
-                      <LinkPreview url="https://www.linkedin.com/in/viraj-amarasingha" className="font-bold text-white">
+                      <LinkPreview url="https://www.linkedin.com/in/viraj-amarasingha-906a1b2a4/" className="font-bold text-white">
                         {item.description}
                       </LinkPreview>
-                    ) : item.title === "GitHub" ? (
+                    ) : item.title === "Email" ? (
+                      // <a href="/gt"><h3 className="text-xl">{item.description}</h3></a>
+                      <LinkPreview url="mailto:virajvikum99@gmail.com" className="font-bold text-white">
+                        {item.description}
+                      </LinkPreview>
+                    ): item.title === "GitHub" ? (
                       // <a href="/gt"><h3 className="text-xl">{item.description}</h3></a>
                       <LinkPreview url="https://github.com/VirajVikum" className="font-bold text-white">
                         {item.description}
-                      </LinkPreview>
-                    ) : (
+                      </LinkPreview> 
+                    ): (
                       <>
                         <h3 className="text-xl">{item.description}</h3>
                       </>

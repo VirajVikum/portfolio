@@ -1,8 +1,8 @@
 "use client";
 
-import { FaCss3, FaJs, FaReact, FaFigma, FaPhp, FaLaravel, FaGit, FaHtml5 } from "react-icons/fa";
+import { FaCss3, FaJs, FaReact, FaFigma, FaPhp, FaLaravel, FaGit, FaHtml5, } from "react-icons/fa";
 
-import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import { SiTailwindcss, SiNextdotjs, SiDjango } from "react-icons/si";
 
 
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
@@ -32,25 +32,25 @@ const about = {
       fieldName: "Experience",
       fieldValue: "2 Years"
     },
+    {      
+      fieldName: "Linkdin",
+      fieldValue: "Viraj Amarasingha"
+    },
+    {      
+      fieldName: "Freelance",
+      fieldValue: "Available"
+    },
     {
+      fieldName: "Email",
+      fieldValue: "virajvikum99@gmail.com"
+    },
+    {      
       fieldName: "Nationality",
       fieldValue: "Sri Lankan"
     },
     {
       fieldName: "Language",
       fieldValue: "English, Sinhala"
-    },
-    {
-      fieldName: "Email",
-      fieldValue: "virajvikum99@gmail.com"
-    },
-    {
-      fieldName: "Freelance",
-      fieldValue: "Available"
-    },
-    {
-      fieldName: "Linkdin",
-      fieldValue: "Viraj Amarasingha"
     },
   ]
 };
@@ -66,41 +66,6 @@ const experience = {
       position: "Full Stack Developer",
       duration: "2024 - Present",
     },
-    {
-      company: "Auso World PVT LTD.",
-      position: "Full Stack Developer",
-      duration: "2024 - Present",
-    },
-    {
-      company: "Auso World PVT LTD.",
-      position: "Full Stack Developer",
-      duration: "2024 - Present",
-    },
-    {
-      company: "Auso World PVT LTD.",
-      position: "Full Stack Developer",
-      duration: "2024 - Present",
-    },
-    {
-      company: "Auso World PVT LTD.",
-      position: "Full Stack Developer",
-      duration: "2024 - Present",
-    },
-    {
-      company: "Auso World PVT LTD.",
-      position: "Full Stack Developer",
-      duration: "2024 - Present",
-    },
-    {
-      company: "Auso World PVT LTD.",
-      position: "Full Stack Developer",
-      duration: "2024 - Present",
-    },
-    {
-      company: "Auso World PVT LTD.",
-      position: "Full Stack Developer",
-      duration: "2024 - Present",
-    },
   ]
 };
 
@@ -111,23 +76,14 @@ const education = {
   description: "Completed a HND in Information Technology, focusing on software development, web technologies, and data analysis.",
   items: [
     {
-      institution: "Sri Rahua National School",
-      course: "Physical Science",
-    },
-    {
       institution: "SLIATE",
       course: "HND in Information Technplogy",
       duration: "2021 - Present",
     },
     {
-      institution: "SLIATE",
-      course: "HND in Information Technplogy",
-      duration: "2021 - Present",
-    },
-    {
-      institution: "SLIATE",
-      course: "HND in Information Technplogy",
-      duration: "2021 - Present",
+      institution: "Alawwa Central College",
+      course: "A/L in Physical Science",
+      duration: "2020",
     },
   ]
 };
@@ -165,6 +121,10 @@ const skills = {
     {
       icon: <SiNextdotjs />,
       name: 'Next.js',
+    },
+    {
+      icon: <SiDjango />,
+      name: 'Django',
     },
   ],
 }
@@ -286,7 +246,11 @@ const Resume = () => {
                               className="flex items-center justify-center xl:justify-start gap-4">
                               <span className="text-white/60">{item.fieldName}</span>
                               {item.fieldName === "Linkdin" ? (
-                              <LinkPreview url="https://www.linkedin.com/in/viraj-amarasingha" className="text-xl hover:zoom-card text-white hover:text-accent">
+                              <LinkPreview url="https://www.linkedin.com/in/viraj-amarasingha-906a1b2a4/" className="text-xl hover:zoom-card text-white hover:text-accent">
+                                {item.fieldValue}
+                              </LinkPreview>
+                              ): item.fieldName === "Email" ?(
+                                <LinkPreview url="mailto:virajvikum99@gmail.com" className="text-xl hover:zoom-card text-white hover:text-accent">
                                 {item.fieldValue}
                               </LinkPreview>
                               ):(

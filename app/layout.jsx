@@ -29,6 +29,7 @@ export default function RootLayout({ children }) {
 
         {/* Background container */}
       <div className="absolute inset-0 -z-10">
+        
           <BackgroundBeams />
                 <SparklesCore 
           id="tsparticlesfullpage"

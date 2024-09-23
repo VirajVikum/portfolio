@@ -1,3 +1,4 @@
+import ParticlesContainer from "@/components/ParticlesContainer";
 import Photo from "@/components/Photo";
 import Social from "@/components/Social";
 import Stats from "@/components/Stats";
@@ -43,7 +44,7 @@ const Home = () => {
             </div>
           </div>
           <div className="order-1 xl:order-none mb-8 xl:mb-0">
-            
+            {/* <ParticlesContainer /> */}
             <Photo />
             </div>
         </div>
